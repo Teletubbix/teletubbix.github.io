@@ -7,7 +7,7 @@ configuration:
   analytics:
     provider: none
   locale: zh-CN
-  baseUrl: teletubbix.github.io
+  baseUrl: teletubbix.com
   ignorePatterns:
     - private
     - templates
