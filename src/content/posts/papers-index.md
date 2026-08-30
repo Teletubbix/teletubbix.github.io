@@ -5,20 +5,23 @@ description: 与研究方向相关的论文阅读笔记
 image: "/covers/papers.png"
 tags: ["索引", "文献阅读"]
 category: 文献阅读
-draft: false
+series: 文献阅读
+pinned: true
+comment: true
 ---
 
-这里收录与研究方向相关的论文和参考资料，**每篇文献一篇笔记**，格式建议：
+这里收录与研究方向相关的论文和参考资料，**每篇文献一篇笔记**。
 
 ## 笔记模板
 
 ```yaml
 title: 论文标题
 category: 文献阅读
+series: 文献阅读
 tags: ["关键词"]
 ```
 
-## 正文结构
+## 正文结构建议
 
 - **一句话总结**
 - **解决了什么问题**

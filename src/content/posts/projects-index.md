@@ -5,7 +5,9 @@ description: 我开发与维护的项目一览
 image: "/covers/projects.png"
 tags: ["索引", "GitHub 项目"]
 category: GitHub 项目
-draft: false
+series: GitHub
+pinned: true
+comment: true
 ---
 
 我开发与维护的项目一览（数据可由脚本自动更新，也可以手动补充说明）。

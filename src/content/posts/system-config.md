@@ -3,9 +3,10 @@ title: 系统配置详情
 published: 2026-08-29
 description: Arch Linux (WSL2) 开发机的系统配置、工具链与维护记录
 image: "/covers/notes.png"
-tags: ["系统", "配置", "学习笔记"]
+tags: ["系统", "配置"]
 category: 学习笔记
-draft: false
+series: 学习笔记
+comment: true
 ---
 
 # Arch Linux (WSL2) 系统配置详情
@@ -108,7 +109,7 @@ draft: false
 
 - **唯一工作区**：`/home/Teletubbix/Code/{C,Cpp,JavaScript,Python}`（其他目录一般不放工作文件）。
 - **工作区**：`/home/Teletubbix/Code/{C,Cpp,JavaScript,Python}`（唯一工作区）。
-- **博客/知识库**：`JavaScript/blog`（Quartz v5）→ [teletubbix.com](https://teletubbix.com)（已挂自定义域名），内容在 `content/{notes,papers,bili,projects}`；**托管 = Cloudflare Pages**（绑 GitHub `teletubbix.github.io` 仓库，push 自动构建部署，`NODE_VERSION=22`，构建命令 `npm ci && npx quartz plugin install && npx quartz build`），域名 DNS 在 Cloudflare（NS: magnolia/memphis.ns.cloudflare.com）。GitHub Actions 的 deploy workflow 已停用（避免重复构建）。
+- **博客/知识库**：`JavaScript/blog-astro`（Astro + **Fuwari** 主题）→ [teletubbix.com](https://teletubbix.com)（自定义域名），内容在 `src/content/posts/`（frontmatter `category` 区分四大板块：学习笔记/文献阅读/B站精华/GitHub 项目）+ 渐变封面 `public/covers/`；**托管 = Cloudflare Pages**（绑 GitHub `teletubbix.github.io` 仓库，push 自动构建：`pnpm install && pnpm run build`，输出 `dist/`，`NODE_VERSION=22`、`PNPM_VERSION=11`），域名 DNS 在 Cloudflare（NS: magnolia/memphis.ns.cloudflare.com）。旧版（Quartz）在 repo 分支 `backup/quartz` 可回滚；Astro 版开发目录 `JavaScript/blog-astro`。
 - **项目**：
   | 项目 | 路径 | 版本 |
   |------|------|------|
